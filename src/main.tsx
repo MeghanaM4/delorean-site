@@ -2,17 +2,14 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 
-import Tutorial from "./pages/hackpad/Tutorial.mdx";
-import Submission from "./pages/hackpad/Submission.mdx";
-import ApprovedParts from "./pages/hackpad/ApprovedParts.mdx";
-import Faq from "./pages/hackpad/Faq.mdx";
-import Braindump from "./pages/hackpad/Braindump.mdx"
-import Resources from "./pages/hackpad/Resources.mdx"
-import GetKeycap from "./pages/hackpad/GetKeycap.mdx"
-import CardGrant from "./pages/hackpad/CardGrant.mdx"
-
-import Overview from "./pages/hackboard/Overview.mdx"
-import Faq2 from "./pages/hackboard/Faq2.mdx"
+import PCB from "./pages/hackpad/pcb.mdx";
+import Parts from "./pages/hackpad/parts.mdx";
+import Guide from "./pages/hackpad/guide.mdx";
+import Setup from "./pages/hackpad/setup.mdx"
+import CrashCourse from "./pages/hackpad/crashcourse.mdx"
+import Submitting from "./pages/hackpad/submitting.mdx"
+import FAQ from "./pages/hackpad/faq.mdx"
+import Resources from "./pages/hackpad/resources.mdx"
 
 import DocPage from "./layouts/DocPage.tsx";
 import SideBarKeyboard from "./components/SideBarKeyboard.tsx";
@@ -31,66 +28,52 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+
   {
-    path: "/guide",
+    path: "/pcb",
     element: (
-      <DocPage Content={Tutorial} SideBar={ SideBar } />
+      <DocPage Content = {PCB} SideBar = {SideBar} />
     ),
   },
-  {
-    path: "/submitting",
-    element: <DocPage Content={ Submission } SideBar={ SideBar } />,
-  },
+
   {
     path: "/parts",
-    element: <DocPage Content={ ApprovedParts } SideBar={ SideBar } />,
-  },
-  {
-    path: "/faq",
-    element: <DocPage Content={ Faq } SideBar={ SideBar } />,
-  },
-  {
-    path: "/braindump",
-    element: <DocPage Content={ Braindump } SideBar={ SideBar } />,
-  },
-  {
-    path: "/resources",
-    element: <DocPage Content={ Resources } SideBar={ SideBar } />,
-  },
-  {
-    path: "/get-keycap",
-    element: <DocPage Content={ GetKeycap } SideBar={ SideBar } />,
-  },
-  {
-    path: "/cardgrant",
-    element: <DocPage Content={ CardGrant } SideBar={ SideBar } />,
-  },
-  {
-    path: "/keyboard",
-    element: <DocPage Content={ Overview } SideBar={ SideBarKeyboard } />,
-  },
-  {
-    path: "/keyboard/faq",
-    element: <DocPage Content={ Faq2 } SideBar={ SideBarKeyboard } />,
+    element: <DocPage Content = {Parts} SideBar = {SideBar} />,
   },
 
-  // Submitting? Great! Do something like this:
   {
-    path: "/projects/orpheuspad",
-    element: <DocPage Content={ OrpheusPad } SideBar={ SideBar } />
+    path: "/guide",
+    element: <DocPage Content = {Guide} SideBar = {SideBar} />,
   },
+
   {
-    path: "/projects/cyaopad",
-    element: <DocPage Content={ CyaoPad } SideBar={ SideBar } />
+    path: "/setup",
+    element: <DocPage Content = {Setup} SideBar = {SideBar} />,
   },
+
   {
-    path: "/projects/wang01",
-    element: <DocPage Content={ Wang01 } SideBar={ SideBar } />
-  }
+    path: "/crashcourse",
+    element: <DocPage Content = {CrashCourse} SideBar = {SideBar} />,
+  },
+
+  {
+    path: "/submitting",
+    element: <DocPage Content = {Submitting} SideBar = {SideBar} />,
+  },
+
+  {
+    path: "/resources",
+    element: <DocPage Content = {Resources} SideBar = {SideBar} />,
+},
+
+  {
+    path: "/faq",
+    element: <DocPage Content = {FAQ} SideBar = {SideBar} />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router = {router} />
   </StrictMode>
 );

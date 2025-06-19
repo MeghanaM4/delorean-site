@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       'backgroundColor': '#150C21',
+      'athena-dark': '#692129',
     },
     fontFamily: {
       mono: ['Ubuntu Mono', 'monospace'],

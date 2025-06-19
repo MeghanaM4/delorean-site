@@ -1,9 +1,20 @@
-# What actually is a Nixie Tube?
+# ...what exactly am I looking at?
 your guide to all the parts of a nixie clock
 
 ## Nixie Tubes
+insert explanation
+
+TLDR, a nixie tube is a tube filled with gas that shows glowy numbers
 
 ## K155ID1 Driver Chip
+So Nixie tubes are hard to control. That's why people build driver chips, to help ***drive*** (control) stuff
+for us. There are driver chips for OLED displays, for 7 segment displays, LED matrixes, and a bunch more. The
+K155ID1 chip is just the driver chip made to control nixie tubes.
+
+With this tiny rectangle it's so much easier to code our tube and make it look cool. We don't have to worry
+about a whole load of nastiness that comes with using Soviet-era tech.
+
+TLDR, the driver chip is what lets us control the nixie tubes
 
 ## 5V-9V to 170V Boost Converter
 To function, IN-12 Nixie tubes need ~170V. Surprisingly, setting up 114 AA batteries is not the most efficient
@@ -11,6 +22,8 @@ way to achieve this. There are these neat things called **boost converters** whi
 voltage from a reasonable amount, like 5V, to an insane amount, or 170V.
 
 Electrically, there's an inductor inside the boost converter. INSERT TECHNICAL EXPLANATION
+
+TLDR, the boost converter cranks up our computer's power to the amount a nixie tube needs
 
 ## Raspberry Pi Pico W
 You may have heard of Raspberry Pis before (spoiler: they're not food), and they're what's called a 

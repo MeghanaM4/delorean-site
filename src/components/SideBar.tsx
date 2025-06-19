@@ -49,7 +49,13 @@ const SideBar = () => {
           </li>
 
           <li>
-            <a href="" className="block py-2 px-4 rounded mt-2 hover:bg-slate-200 transition-all text-gray-400 hover:text-red-500">
+            <a href="/resources" className="block py-2 px-4 rounded hover:bg-slate-200 transition-all text-slate-900 hover:text-cyan-800">
+              Resources
+            </a>
+          </li>
+
+          <li>
+            <a href="" className="block py-2 px-4 rounded hover:bg-slate-200 transition-all text-gray-400 hover:text-red-500">
               Highway Invite
             </a>
           </li>
