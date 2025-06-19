@@ -1,0 +1,39 @@
+# What actually is a Nixie Tube?
+your guide to all the parts of a nixie clock
+
+## Nixie Tubes
+
+## K155ID1 Driver Chip
+
+## 5V-9V to 170V Boost Converter
+To function, IN-12 Nixie tubes need ~170V. Surprisingly, setting up 114 AA batteries is not the most efficient
+way to achieve this. There are these neat things called **boost converters** which can (you guessed it) boost
+voltage from a reasonable amount, like 5V, to an insane amount, or 170V.
+
+Electrically, there's an inductor inside the boost converter. INSERT TECHNICAL EXPLANATION
+
+## Raspberry Pi Pico W
+You may have heard of Raspberry Pis before (spoiler: they're not food), and they're what's called a 
+**microcontoller**-- basically just a mini computer. 
+
+insert pico w pic
+
+They can process data and information with the chips they have on board, which act like their brains (the chip 
+is usually the big black square). The chip on the pico W is the RP2040. There are a ton of different
+chips, all with their own features and pros and cons.
+
+We're using the pico W because it's small (pico) and because it's Wifi-enabled (that's the W
+part). So it won't take up too much space and we can connect to the internet to sync our clocks.
+
+TLDR, the pico W is the brains of the operation.
+
+
+## USB Isolator
+We don't want to blow up your computer, so we connect the pico W to the **USB isolator** which then plugs into 
+your computer. This way, if the pico ever requests too much current, your computer won't just blindly follow,
+the isolator will stop it. 
+
+Electrically, the isolator creates a second ground so the computer doesn't have to
+share its ground with the pico (and the rest of the circuit) directly.
+
+TLDR, the USB isolator makes sure your computer stays <u>not on fire</u>
