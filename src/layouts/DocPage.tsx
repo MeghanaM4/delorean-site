@@ -11,14 +11,14 @@ const DocPage = ({ Content, SideBar }: { Content: any; SideBar: any }) => {
               href="/"
               className="text-black bg-green-400 px-2 py-1 rounded-sm my-2"
             >
-              HACKPAD
+              DELOREAN
             </a>
             <img
               src={OrpheusFlag}
               className="max-w-12 sm:max-w-24 hidden sm:right-20 sm:block absolute"
             ></img>
 
-            <a href="https://github.com/hackclub/hackpad" target="_blank">
+            <a href="https://github.com/meghanam4/delorean" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"

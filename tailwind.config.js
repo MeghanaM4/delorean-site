@@ -8,8 +8,12 @@ export default {
   ],
   theme: {
     extend: {
-      'backgroundColor': '#150C21',
-      'athena-dark': '#692129',
+      colors: {
+        'backgroundColor': '#993d47',
+        'athenaDark': '#692129',
+        'athenaYellow': '#f5c04e',
+        'athenaReg': '#8c2e37',
+      }
     },
     fontFamily: {
       mono: ['Ubuntu Mono', 'monospace'],

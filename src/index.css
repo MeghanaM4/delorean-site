@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  /* background-color: #150C21; */
-  background-image: url("/bg-light.svg");
+  background-color: #ffe0e3;
+  /* background-image: url("/bg-light.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

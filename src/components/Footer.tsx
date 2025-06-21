@@ -1,9 +1,21 @@
 const Footer = () => {
     return (
         <footer>
-            <div className="bg-athena-dark-900 py-12 text-slate-600 text-center font-mono">
-                <p>Made with ❤️ by @alexren // qcoral</p>
-                <p>Follow me on <a href="https://github.com/qcoral" target="_blank" className="text-cyan-600">github!</a> for a special prize</p>
+            <div className="bg-athenaDark py-12 text-white text-center font-mono">
+                <p className="mb-2">
+                    Made with ❤️ by meghana for the{" "}
+                    <a
+                        href="https://award.athena.hackclub.com"
+                        target="_blank"
+                        className="text-white"
+                    >
+                        athena award
+                    </a>
+                </p>
+                
+                <a href="https://hackclub.com/">
+                    <p className="text-white" >Hack Club 2025</p>
+                </a>
             </div>
 
         </footer>
