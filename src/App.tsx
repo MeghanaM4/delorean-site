@@ -1,4 +1,3 @@
-import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import OrpheusFlag from "/OrpheusFlag.svg";
 
@@ -11,9 +10,7 @@ export default function App() {
                     className="max-w-20 sm:max-w-36 left-4 sm:left-12 absolute"
                 ></img>
             </div>
-            <div className="fixed max-w-48 right-4 sm:right-5 md:right-10">
-                <NavBar />
-            </div>
+      
             <div className="flex justify-center text-center">
                 <div className="mt-16 text-slate-950 mx-8 md:max-w-6xl font-mono">
                     <div className="flex justify-center items-center align-middle">

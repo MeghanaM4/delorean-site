@@ -7,14 +7,14 @@ const Footer = () => {
                     <a
                         href="https://award.athena.hackclub.com"
                         target="_blank"
-                        className="text-white"
+                        className="text-white underline"
                     >
                         athena award
                     </a>
                 </p>
                 
                 <a href="https://hackclub.com/">
-                    <p className="text-white" >Hack Club 2025</p>
+                    <p className="text-white italic" >Hack Club 2025</p>
                 </a>
             </div>
 
