@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'backgroundColor': '#993d47',
+        'backgroundColor': '#ffe0e3',
         'athenaDark': '#692129',
         'athenaYellow': '#f5c04e',
         'athenaReg': '#8c2e37',

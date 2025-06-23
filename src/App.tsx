@@ -3,24 +3,27 @@ import OrpheusFlag from "/OrpheusFlag.svg";
 
 export default function App() {
     return (
-        <div>
+        <div className="bg-[url(/deloreanbg.png)] bg-cover">
+        
             <div>
-                <img
-                    src={OrpheusFlag}
-                    className="max-w-20 sm:max-w-36 left-4 sm:left-12 absolute"
-                ></img>
+                <a href="https://hackclub.com" target="_blank">
+                    <img
+                        src={OrpheusFlag}
+                        className="max-w-20 sm:max-w-36 left-4 sm:left-12 absolute"
+                    ></img>
+                </a>
             </div>
-      
+
             <div className="flex justify-center text-center">
                 <div className="mt-16 text-slate-950 mx-8 md:max-w-6xl font-mono">
                     <div className="flex justify-center items-center align-middle">
-                        
-                            <a href="/guide" className="flex justify-center">
-                                <h1 className="text-5xl sm:text-6xl italic font-bold text-athenaReg mb-6">
-                                    THE DELOREAN
-                                </h1>
-                            </a>
-                      
+
+                        <a href="/guide" className="flex justify-center">
+                            <h1 className="text-5xl sm:text-6xl italic font-bold text-athenaReg mb-6">
+                                THE DELOREAN
+                            </h1>
+                        </a>
+
                     </div>
                     <img
                         src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/55dab8b5523a59ab0233ee7771b9ef9f68e03172_casev2angle.png"
@@ -30,7 +33,7 @@ export default function App() {
                     <div>
 
                         <div className="flex flex-row items-center justify-center space-x-4 sm:space-x-8 sm:space-y-6 md:space-y-0 py-6 text-md sm:text-2xl font-semibold">
-                            
+
                             <div>
                                 <h3>Design a PCB</h3>
                                 <img
@@ -57,8 +60,8 @@ export default function App() {
 
                         </div>
 
-                        
-                        
+
+
                         <div>
                             <a href="/guide" className="flex justify-center">
                                 <p className="text-xl sm:text-2xl text-center rounded-xl mt-10 bg-athenaYellow text-slate-50 max-w-54 sm:max-w-xl px-3 py-2 rounded-sm font-semibold border-black border-4">
