@@ -26,7 +26,7 @@ export default function App() {
 
                     </div>
                     <img
-                        src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/55dab8b5523a59ab0233ee7771b9ef9f68e03172_casev2angle.png"
+                        src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/299878236e195d50f34ebc1b391db7039ce8a02c_render.png"
                         className="w-full max-w-xl mx-auto"
                     ></img>
 

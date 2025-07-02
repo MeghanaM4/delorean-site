@@ -2,14 +2,33 @@
 your guide to all the parts of a nixie clock
 
 ## Nixie Tubes
-insert explanation
 
-TLDR, a nixie tube is a tube filled with gas that shows glowy numbers
+Nixie tubes are a glass tube filled with low pressure neon gas (and a bit of argon) that have a bunch of metal
+numbers inside.
+
+<img width="200rem"
+src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5abcd4acf6245a0a270d811a7e0a76e7129b151f_download.jpeg"/>
+
+Each of these numbers is a **cathode**, which electrons flow into when voltage is applied. Each tube has 10
+cathodes (one for each digit, 0-9), and one anode. The cathode is the positive end and the anode is the negative 
+end. One number is activated at a time (or else everything would be jumbled), so at any given time the circuit
+is complete.
+
+<img width="200rem"
+src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/ce1bfb34d34586622fe64b0a18b186b9778bac7e_96170212e2086d2d4dca3704f254205c792fe4f6_image.png"/>
+
+When you put voltage into the cathode, the whole thing glows because the gas is ionized. Nixie tubes aren't
+like those old-timey incandescent bulbs that get so hot that they glow, they're called *cold cathode* lights.
+
+TLDR, a nixie tube is a tube filled with gas that shows glowy numbers when you apply voltage
 
 ## K155ID1 Driver Chip
 So Nixie tubes are hard to control. That's why people build driver chips, to help ***drive*** (control) stuff
 for us. There are driver chips for OLED displays, for 7 segment displays, LED matrixes, and a bunch more. The
 K155ID1 chip is just the driver chip made to control nixie tubes.
+
+<img width="200rem"
+src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/66929130234407cc582252d8111549a4f7dffc2d_chip.png" />
 
 With this tiny rectangle it's so much easier to code our tube and make it look cool. We don't have to worry
 about a whole load of nastiness that comes with using Soviet-era tech.
@@ -21,6 +40,9 @@ To function, IN-12 Nixie tubes need ~170V. Surprisingly, setting up 114 AA batte
 way to achieve this. There are these neat things called **boost converters** which can (you guessed it) boost
 voltage from a reasonable amount, like 5V, to an insane amount, or 170V.
 
+<img width="200rem"
+src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/da4df76c21c6584505436698f5f15777411a1edd_s7754a9d00c894d06bb0f356ae8e84bc4w.jpg_220x220q75.jpg_.png"/>
+
 Electrically, there's an inductor inside the boost converter. INSERT TECHNICAL EXPLANATION
 
 TLDR, the boost converter cranks up our computer's power to the amount a nixie tube needs
@@ -29,7 +51,8 @@ TLDR, the boost converter cranks up our computer's power to the amount a nixie t
 You may have heard of Raspberry Pis before (spoiler: they're not food), and they're what's called a 
 **microcontoller**-- basically just a mini computer. 
 
-insert pico w pic
+<img width="200rem"
+src="https://cdn11.bigcommerce.com/s-2fbyfnm8ev/images/stencil/1280x1280/products/1737/6232/PICO_W_HERO_TRANSPARENT__26247.1656080410.png?c=2"/>
 
 They can process data and information with the chips they have on board, which act like their brains (the chip 
 is usually the big black square). The chip on the pico W is the RP2040. There are a ton of different
@@ -45,6 +68,9 @@ TLDR, the pico W is the brains of the operation.
 We don't want to blow up your computer, so we connect the pico W to the **USB isolator** which then plugs into 
 your computer. This way, if the pico ever requests too much current, your computer won't just blindly follow,
 the isolator will stop it. 
+
+<img width="200rem"
+src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e8c92d919a57fd332c388eaad28922ee96a087c6_ucb.png"/>
 
 Electrically, the isolator creates a second ground so the computer doesn't have to
 share its ground with the pico (and the rest of the circuit) directly.
